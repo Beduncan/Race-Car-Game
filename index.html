@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<script type="text/javascript" src="assets/javascript/cargame.js"></script>
 </head>
-<body>
+<body id="body">
 	<div class="container">
 		<header class="text-center .bg-dark" width="100%">Car Collector</header>
 		<div class="row">
@@ -18,9 +18,8 @@
 			<div class="col-lg-12">
 				<h2 class="text-center">The Random Number Will Be Given here
 				</h2>
-				<div id="random#">
-					
-				</div>
+				<h2 class="text-center" id="random#">
+				</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -28,25 +27,25 @@
 		</div>
 		<div class="row">
 			<div class=" col-lg-3">
-				<button> 
+				<button class="car"> 
 					<img  src="assets/images/miata.jpg" alt=" Na Miata" width="85%" value="116"  id=miata>
 					<h3 >Mozda Miata Na</h3>
 				</button>
 			</div>
 			<div class="col-lg-3">
-				<button>
+				<button class="car">
 					<img src="assets/images/911.jpg" alt="911" width="94%" value="370" id="911"> 
 					<h3 class="cartext">Porsche 911 Carrera</h3>
 				</button>
 			</div>
 			<div class="col-lg-3">
-				<button> 
+				<button class="car"> 
 						<img src="assets/images/demon.jpg" alt="demon" width="100%" value="840" id="demon"> 
 						<h3 class="cartext">Dodge Demon</h3>
 				</button>			
 			</div>
 			<div class="col-lg-3">
-				<button> 
+				<button class="car"> 
 					<img src="assets/images/Mclaren P1.jpg" alt=" Na Miata" width="100%" value="903" id=p1> 
 					<h3 class="cartext">Mclaren P1</h3>
 				</button>
@@ -55,7 +54,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<h2>Your number is</h2>
-				<h1 id="usernumber">65</h1>
+				<h1 id="usernumber"></h1>
 			</div>
 		
 		</div>

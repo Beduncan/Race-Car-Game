@@ -1,59 +1,60 @@
 // variables 
-var randomhp =[2279, 1909, 1376, 2113, 1006,1273, 1210, 1069];
+var randomhp =[2279, 1909, 1376, 2113, 1006, 1273, 1210, 1069];
 var usersGadd = 0; 
 var randomnumber = 0;
 var winC=0;
 var loseC=0;
 var choosenhp=[];
 $(document).ready(function()
-{
+{	
+
 	//choosing the random number 
-	choosenhp = randomhp[Math.floor(Math.random()*randomhp.length)];
-			console.log(choosenhp);
+			randomnumber = Math.floor((Math.random() * 200) + 19);
+			console.log(randomnumber);
+		//geteing var from html 
+	function display()
+	{
+		document.getElementById("random#").innerHTML = randomnumber;
+		document.getElementById("usernumber").innerHTML = usersGadd;
+	}
+	function click()
+	{
+		miata = Math.floor((Math.random() * 10) + 1);
+		Porsche = Math.floor((Math.random() * 10) + 1);
+		demon = Math.floor((Math.random() * 10) + 1);
+		MP1 = Math.floor((Math.random() * 10) + 1);
+
 
 	//making pics clickable 
-	function miata()
-	{
 		 $("#miata").on('click', function()
 			{
-				console.log(usersGadd += 166)
+				(usersGadd += miata)
+				display();
 			}); 				
-	}
-	function p911()	
-	{
 		$("#911").on('click',function()
 			{
-				console.log(usersGadd += 370)
+				(usersGadd += Porsche)
+				display();
 			});	
-	}
-	function demon()	
-	{
 		$("#demon").on('click',function()
 			{
-				console.log(usersGadd += 840)
+				(usersGadd += demon)
+				display();
 			});	
-	}
-	function p1()	
-	{
 		$("#p1").on('click',function()
 			{
-				console.log(usersGadd += 903)
+				(usersGadd += MP1)
+				display();
 			});	
 	}
-//win
-function winlose()
+//calling fuctions 
+display();
+click();
+	
+if(usersGadd == randomnumber)
 {
-	if(usersGadd == choosenhp)
-	{
-		alert("win");
-	}
-}	
-	winlose();
-	demon();
-	p911();
-	miata();
-	p1();
-
+	alert("win");
+}
 
 //closing ready function
 });	
