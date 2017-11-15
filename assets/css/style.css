@@ -1,11 +1,66 @@
-#body{
+#body
+{
+
+	font-family: 'Vollkorn SC', serif;
+	font-weight: bold;
 	background-color: grey;
 }
-header {
+
+header
+{
+	margin: 10px;
+	padding: 10px;
+	font-weight: bolder;
+	border:5px solid white;
 	background-color: black;
-	color:green;
-	font-size: 45px;
+	color:white;
+	font-size: 70px;
 }
-.car{
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size:30px;
+}
+#rules
+{	
+	margin-top:20px;
+	padding-bottom: 20px;
+	border-bottom: 5px solid white;
+	margin-bottom: 10px;  
+}
+#randomly{
+	background-color:  green;
+	color: black;
+	padding: 20px;
+}
+.yournumber{
+	margin-right: 10px;
+	color:green;
+	padding: 34px;
+	background-color: black
+}
+#winlose{
+	background-color: green;
+	color:black;
+	padding:42px;
+}
+
+#carpick{
+	margin-top: 20px;
+	border-bottom: 5px solid white 
+
+}
+.carbutton
+{
+	margin-top: 20px;
+}
+.car
+{
+	font-family: times;
+	margin-top: 20px;
+	border: 7px solid white;
 	background-color: black;
+	color: white;
+	font-size: 20px;
 }
