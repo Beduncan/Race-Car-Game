@@ -16,14 +16,17 @@ $(document).ready(function()
 	}
 	
 	//choosing the random number
-		randomnumber = Math.floor((Math.random() * 200) + 19);
+	function reset()
+	{
+		randomnumber = Math.floor((Math.random() * 181) + 19);
 			console.log(randomnumber);
-				
+		
+		usersGadd=0		
 		miata = Math.floor((Math.random() * 3) + 1);
 		Porsche = Math.floor((Math.random() * 4) + 3);
 		demon = Math.floor((Math.random() * 4) + 6);
 		MP1 = Math.floor((Math.random() * 4) + 9);
-	
+	}
 
 
 	function click()
@@ -54,27 +57,32 @@ $(document).ready(function()
 				win();
 			});	
 	}
-//calling fuctions 
-display();
-click();
-	
-console.log(winC)
-console.log(loseC)
+
 function win()
 {
 	if(usersGadd === randomnumber)
 	{
-		alert("win");
+		alert("You Win!");
+		reset();
 		(winC = winC+1);
-		display();
+		display();	
 	}
-	if(!(usersGadd<randomnumber))
+		
+	
+	else if(!(usersGadd<randomnumber))
 	{
-		alert("lose");
+		alert("You Lose!");
+		reset();
 		(loseC = loseC+1);
 		display();
 	}
-}
-
+}		
+//calling fuctions 
+	reset();	
+	display();	
+	click();
+	console.log(winC)
+	console.log(loseC)
+	win();
 //closing ready function
 });	
