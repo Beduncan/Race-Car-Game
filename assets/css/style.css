@@ -18,7 +18,7 @@ header
 }
 h1
 {
-	font-size: 30px;
+	font-size: 25px;
 }
 #rules
 {	
@@ -27,21 +27,21 @@ h1
 	border-bottom: 5px solid white;
 	margin-bottom: 10px;  
 }
-#randomly{
+.randomly{
 	background-color:  green;
 	color: black;
-	padding: 20px;
 }
 .yournumber{
-	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 14px;
 	color:green;
-	padding: 34px;
-	background-color: black
+	background-color: black;
 }
 #winlose{
+	padding-top: 4px;
+	padding-bottom: 5px;
 	background-color: green;
 	color:black;
-	padding:42px;
 }
 
 #carpick{
