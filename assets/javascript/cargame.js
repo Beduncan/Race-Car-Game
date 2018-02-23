@@ -30,25 +30,29 @@ $(document).ready(function()
 
 	function click()
 	{
-		//making pics clickable 
+		//making pics clickable
+		//this is the miata 
 		 $("#miata").on('click', function()
 			{
 				(usersGadd += miata)
 				display();
 				win();		
-			}); 				
+			}); 
+			//this is the 911				
 		$("#911").on('click',function()
 			{
 				(usersGadd += Porsche)
 				display();
 				win();
 			});	
+		//this is the dodge demon 
 		$("#demon").on('click',function()
 			{
 				(usersGadd += demon)
 				display();
 				win();
 			});	
+		// this is the the mclaren p1
 		$("#p1").on('click',function()
 			{
 				(usersGadd += MP1)
@@ -56,22 +60,29 @@ $(document).ready(function()
 				win();
 			});	
 	}
-
+//win function 
 function win()
 {
+	//if your guess is equil to the random number you win 
 	if(usersGadd === randomnumber)
 	{
+		//alerts user
 		alert("You Win!");
+		//rests game 
 		reset();
+		//win count up by one 
 		(winC = winC+1);
 		display();	
 	}
 		
-	
+	//is the user go over the random number 
 	else if(!(usersGadd<randomnumber))
 	{
+		//alert user 
 		alert("You Lose!");
+		//resets game
 		reset();
+		//add one to lose counter 
 		(loseC = loseC+1);
 		display();
 	}
