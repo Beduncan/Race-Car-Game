@@ -28,7 +28,6 @@ $(document).ready(function()
 		MP1 = Math.floor((Math.random() * 4) + 9);
 	}
 
-
 	function click()
 	{
 		//making pics clickable 
