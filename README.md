@@ -20,3 +20,6 @@ https://beduncan.github.io/Race-Car-Game/
 
 * **Bryant Duncan** - *Solo developer* - (https://www.linkedin.com/in/bryant-duncan/)
 
+##ScreenShots
+![screenshot 4](https://user-images.githubusercontent.com/31356925/39392398-e54d8554-4a69-11e8-8b26-0b093abe9035.png)
+![screenshot 1](https://user-images.githubusercontent.com/31356925/39392394-d940b6e6-4a69-11e8-8cd3-bf66afd43970.png)
